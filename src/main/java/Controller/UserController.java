@@ -66,11 +66,6 @@ public class UserController {
                 msg.setCode(200);
                 msg.setMessage(username+"成功注册！");
                 msg.setData(PostUserResponse.getBody());
-                //return msg;*/
-                /*Msg msg = new Msg();
-                msg.setCode(500);
-                msg.setMessage("用户已存在");
-                msg.setData("");*/
                 return msg;
             }
 
