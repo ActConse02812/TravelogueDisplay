@@ -1,21 +1,24 @@
 package Entity;
 
-public class User {
-    private long userId;
-    private String password;
-    private String authorization;
-    private String username;
-    private int isLogin;
-    private int isBan;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-    public User(long userId, String password, String authorization, String username, int isLogin, int isBan) {
-        this.userId = userId;
-        this.password = password;
-        this.authorization = authorization;
-        this.username = username;
-        this.isLogin = isLogin;
-        this.isBan = isBan;
-    }
+public class User {
+    @JsonProperty("user_id")
+    private long userId;
+    @JsonProperty("password")
+    private String password;
+    @JsonProperty("authorization")
+    private String authorization;
+    @JsonProperty("username")
+    private String username;
+    @JsonProperty("isLogin")
+    private int isLogin;
+    @JsonProperty("isBan")
+    private int isBan;
+    @JsonProperty("avatar")
+    private String avatar;
+    @JsonProperty("id")
+    private long id;
 
     public User() {
     }
@@ -66,5 +69,21 @@ public class User {
 
     public void setIsBan(int isBan) {
         this.isBan = isBan;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 }

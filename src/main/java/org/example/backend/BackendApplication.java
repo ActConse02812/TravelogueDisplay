@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"Controller", "Service", "ServiceImpl", "Dao", "DaoImpl"})
+@ComponentScan(basePackages = {"Controller", "Service", "ServiceImpl", "Dao", "DaoImpl", "Entity"})
 public class BackendApplication {
 
     public static void main(String[] args) {
